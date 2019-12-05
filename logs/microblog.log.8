@@ -1,4 +1,5 @@
-2019-12-05 12:56:27,613 ERROR: Exception on / [GET] [in /Users/mikailkaya/Desktop/microblog/venv/lib/python3.7/site-packages/flask/app.py:1891]
+2019-12-05 11:58:45,906 INFO: Microblog startup [in /Users/mikailkaya/Desktop/microblog 2/app/__init__.py:52]
+2019-12-05 11:59:01,629 ERROR: Exception on / [GET] [in /Users/mikailkaya/Desktop/microblog/venv/lib/python3.7/site-packages/flask/app.py:1891]
 Traceback (most recent call last):
   File "/Users/mikailkaya/Desktop/microblog/venv/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1246, in _execute_context
     cursor, statement, parameters, context
@@ -59,5 +60,6 @@ WHERE followers.follower_id = ? UNION SELECT post.id AS post_id, post.body AS po
 FROM post 
 WHERE post.user_id = ?) AS anon_1 ORDER BY anon_1.post_timestamp DESC
  LIMIT ? OFFSET ?]
-[parameters: (6, 6, 1, 0)]
+[parameters: (9, 9, 1, 0)]
 (Background on this error at: http://sqlalche.me/e/e3q8)
+2019-12-05 12:12:24,636 INFO: Microblog startup [in /Users/mikailkaya/Desktop/microblog 2/app/__init__.py:52]
