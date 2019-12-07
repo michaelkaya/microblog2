@@ -1,4 +1,4 @@
-2019-12-06 16:54:04,546 ERROR: Exception on / [GET] [in /Users/mikailkaya/Desktop/microblog/venv/lib/python3.7/site-packages/flask/app.py:1891]
+2019-12-07 11:38:20,267 ERROR: Exception on /index [GET] [in /Users/mikailkaya/Desktop/microblog/venv/lib/python3.7/site-packages/flask/app.py:1891]
 Traceback (most recent call last):
   File "/Users/mikailkaya/Desktop/microblog/venv/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1246, in _execute_context
     cursor, statement, parameters, context
@@ -59,5 +59,5 @@ WHERE followers.follower_id = ? UNION SELECT post.id AS post_id, post.body AS po
 FROM post 
 WHERE post.user_id = ?) AS anon_1 ORDER BY anon_1.post_timestamp DESC
  LIMIT ? OFFSET ?]
-[parameters: (6, 6, 1, 0)]
+[parameters: (10, 10, 1, 0)]
 (Background on this error at: http://sqlalche.me/e/e3q8)
